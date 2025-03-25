@@ -3,6 +3,8 @@ import './App.css'
 
 function App() {
   const [question, setQuestion] = useState(null);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function allQuizes() {
@@ -13,7 +15,9 @@ function App() {
         setQuestion(data)
       } catch (err) {
         console.log('Error:', err);
-        setError(err)
+        setError(true)
+      } finally {
+        setLoading(false)
       }
     }
     allQuizes();
@@ -21,10 +25,12 @@ function App() {
 
 
   return (
-    <>{question &&
-      <h1>Q:1 {question[0].question.text}</h1>
+    <>
+      {question && <h1>Q:1 {question[0].question.text}</h1>}
 
-    }
+      {error && <h1>error occured</h1>}
+      {loading && <h1>loading...</h1>}
+
     </>
   )
 }
