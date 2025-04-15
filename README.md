@@ -1,12 +1,75 @@
-# React + Vite
+# 🧠 React Quiz App (Vite + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **dynamic quiz application** built with **React**, **Vite**, and **Tailwind CSS**. It fetches real-time trivia questions from an external API and features:
 
-Currently, two official plugins are available:
+- Multiple-choice questions
+- Real-time score calculation
+- Per-question countdown timer ⏳
+- Auto-advance when time runs out
+- Fully responsive UI using Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔄 **React + Vite** for fast development and hot reload
+- 🎨 **Tailwind CSS** for sleek, responsive UI
+- 📡 **Fetches questions** from [The Trivia API](https://the-trivia-api.com/)
+- ⏱️ **Timer-based quiz** (60 seconds per question)
+- ✅ **Score tracking**
+- 🎯 **Auto-submit on timeout**
+- 💡 Minimal, clean, and animated interface
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/asharaam1/07-Quiz-App.git
+cd 07-Quiz-App
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Start the development server
+```bash
+npm run dev
+```
+
+---
+
+## 🧱 Tech Stack
+
+- **React** – UI library
+- **Vite** – Frontend build tool
+- **Tailwind CSS** – Utility-first CSS framework
+- **JavaScript (ES6+)**
+- **The Trivia API** – Source for quiz questions
+
+---
+
+## 📊 Scoring System
+
+- ✅ Correct answer: +10 points
+- ❌ No penalty for wrong/unanswered
+- ⏱ Timer: 60 seconds/question
+- 🏁 Final score shown at the end
+
+---
+
+## 🎯 Future Enhancements
+
+- Add quiz categories and difficulty levels
+- Show correct answers after submission
+- Save high scores locally or in a database
+- Add dark mode toggle
+
+---
+
+## 🙌 Acknowledgments
+
+- Trivia questions powered by [The Trivia API](https://the-trivia-api.com/)
+- UI built with Tailwind CSS and React
